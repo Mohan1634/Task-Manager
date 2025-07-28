@@ -6,7 +6,7 @@ export const connectDb = () => {
       dbName: "TaskManager",
     })
     .then((c) => {
-      console.log("DataBase Connected");
+      console.log(`DataBase Connected with ${c.connection.host} `);
     })
     .catch((e) => {
       console.log(e);
