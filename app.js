@@ -27,5 +27,9 @@ app.use(cors({
 app.use("/api/v1/users",userRoute);
 app.use("/api/v1/task",taskRoute);
 
+app.get("/",(req,res)=>{
+    res.send("Nice working");
+})
+
 //using ErrorMiddleware
 app.use(errorMiddleWare);
